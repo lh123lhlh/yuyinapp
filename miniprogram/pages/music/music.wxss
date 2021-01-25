@@ -1,0 +1,10 @@
+/* pages/music/music.wxss */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.slide-image{
+  width: 100%;
+}
