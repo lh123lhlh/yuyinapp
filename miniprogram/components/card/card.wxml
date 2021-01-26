@@ -1,0 +1,3 @@
+<!--components/card/card.wxml-->
+<view class="card">卡片组件</view>
+
