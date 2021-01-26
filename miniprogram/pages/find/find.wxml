@@ -1,2 +1,8 @@
 <!--pages/find/find.wxml-->
-<text>pages/find/find.wxml</text>
+<text>发现</text>
+<view>
+  <block wx:for="{{cards}}">
+    <my-card></my-card>
+  </block>
+</view>
+
