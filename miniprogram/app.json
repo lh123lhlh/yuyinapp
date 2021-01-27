@@ -2,11 +2,12 @@
   "pages": [
     "pages/music/music",
     "pages/find/find",
-    "pages/profile/profile"
+    "pages/profile/profile",
+    "pages/test/test"
   ],
   "requiredBackgroundModes": [
-    "audio"],
-
+    "audio"
+  ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
@@ -14,7 +15,6 @@
     "navigationBarTitleText": "云音乐",
     "navigationBarTextStyle": "white"
   },
-
   "tabBar": {
     "color": "#474747",
     "selectedColor": "#d43c43",
@@ -29,13 +29,13 @@
         "pagePath": "pages/find/find",
         "text": "发现",
         "iconPath": "images/find.png",
-        "selectedIconPath": "images/find-active.png" 
+        "selectedIconPath": "images/find-active.png"
       },
       {
         "pagePath": "pages/profile/profile",
         "text": "我的",
         "iconPath": "images/profile.png",
-        "selectedIconPath": "images/profile-active.png" 
+        "selectedIconPath": "images/profile-active.png"
       }
     ]
   },
