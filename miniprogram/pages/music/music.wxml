@@ -7,8 +7,8 @@
 </swiper>
 
 <text class="title">场景歌单</text>
-<view class="playList-container">
-  <block wx:for="{{playList}}" wx:key="id">
-    <lh-playList playList = "{{item}}"></lh-playList>
+<view class="playlist-container">
+  <block wx:for="{{playlist}}" wx:key="id">
+    <lh-playlist playList = "{{item}}"></lh-playlist>
   </block>
 </view>

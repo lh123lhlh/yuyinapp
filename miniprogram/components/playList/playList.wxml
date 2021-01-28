@@ -1,6 +1,6 @@
 <!--components/playList/playList.wxml-->
-<view class="playList-container">
-  <image src="{{playList.picUrl}}" class="playList-img"></image>
-  <text class="playList-playCount">{{_count}}</text>
-  <view class="playList-name">{{playList.name}}</view>
+<view class="playlist-container">
+  <image src="{{playlist.coverImgUrl}}" class="playlist-img"></image>
+  <text class="playlist-playcount">{{_count}}</text>
+  <view class="playlist-name">{{playlist.name}}</view>
 </view>

@@ -41,6 +41,9 @@
   "projectname": "%E4%BD%99%E9%9F%B3",
   "libVersion": "2.14.1",
   "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+  "compileType": "miniprogram",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
   "condition": {
     "plugin": {
       "list": []
@@ -62,6 +65,13 @@
         {
           "name": "pages/music/music",
           "pathName": "pages/music/music",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "test",
+          "pathName": "pages/test/test",
+          "query": "",
           "scene": null
         }
       ]

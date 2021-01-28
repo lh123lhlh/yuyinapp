@@ -4,12 +4,12 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    playList: {
+    playlist: {
       type: Object,
     }
   },
   observers: {
-    ['playList.playCount'](count) {
+    ['playlist.playcount'](count) {
       this.setData({
         _count: this._tranNumber(count,2)
       })

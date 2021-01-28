@@ -1,4 +1,4 @@
-// miniprogram/test/test.js
+// miniprogram/pages/test/test.js
 Page({
 
   /**
@@ -14,10 +14,9 @@ Page({
   onLoad: function (options) {
     wx.cloud.callFunction({
       name: 'getPlayList'
-    }).then((res) => {
+    }).then((res) =>{
       console.log(res)
     })
-
   },
 
   /**
