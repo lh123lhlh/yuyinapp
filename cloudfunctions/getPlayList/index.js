@@ -2,15 +2,16 @@
 const cloud = require('wx-server-sdk')
 
 cloud.init({
-  env: 'lh-7g764pefd3152a87'
+  env:'lh-7g764pefd3152a87'
 })
+//引入云数据库，并定义一个常量方便调用
 const db = cloud.database()
 //引入云数据库的playlist集合，并定义一个常量方便使用
 const playListCollection = db.collection('playlist')
 //引入网络请求库axios，并定义一个常量方便使用
 const axios = require('axios')
 //定义接口地址，复制内网穿透厚postman测试通过的接口地址
-const URL = 'http://localhost:3000/top/playlist/highquality?before=1503639064232&limit=20'
+const URL = 'https://yuyin.cn1.utools.club/top/playlist/highquality?before=1503639064232&limit=50'
 // 云函数入口函数
 exports.main = async (event, context) => {
   const{
@@ -41,16 +42,6 @@ exports.main = async (event, context) => {
     })
   }
   return newData.length
-}
+  
 
-// 云函数入口函数
-exports.main = async (event, context) => {
-  const wxContext = cloud.getWXContext()
-
-  return {
-    event,
-    openid: wxContext.OPENID,
-    appid: wxContext.APPID,
-    unionid: wxContext.UNIONID,
-  }
 }

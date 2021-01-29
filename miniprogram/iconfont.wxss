@@ -1,0 +1,33 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1611932151745'); /* IE9 */
+  src: url('iconfont.eot?t=1611932151745#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPEAAsAAAAACGAAAAN1AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDMgqDZIMjATYCJAMUCwwABCAFhG0HYhtJB8gOJaFwwcBgIAFgPPy3X7tvZv6qkCSJRrqfTiJEEmmJdJK2KJYK2TN5f7Kzf4sDPF86yNWX95LZzSaenYPdSkWb9qtLctVHBbbQ/vzltLEE57OzjCK70f4dNfbEQQMwDijL9gbawgWSqDeMXdASLxNoWXYVc1xZfxM8FeasQJzLkgCeGYPSUB4aQq1iY4G4BzeNNMq+BHAXfD/+IDU8QVJlMBeenFVoofgz/cMx16P2eOgxQDGdDWwbGTtAIWaVjnNclNjBaanDeftAS0OSpuo39mHzw7GqkqgPRLesPzyKkGSiBmZpB+wjXbk4hYNR+BrDCL42MRJfx3rPy66mt9DENfCCuCsoWXfNyzk6+/n5+sZeLo2FWrnevbEdYCdTtmd3fJ/hbIvj2+sRbktrD4nSXj15tjS2sRLKL65ujkcobXzmxzaDjNxTch69e36DBZfr9snJHafzlsPx2NbeDIk0XvKWh95LS+Hc8vL4Yhh75/bS2vp22K3FxZ6F0JsLC6mlv04STi6mxfgFLwb73XNzv+8ftBjkHyvOOEk4+uQ/6/8p+SinIL8Q0tO7+qaYSt1RLxTb1dd9mu1oUZAw9w/qQYHwWmapamrUAf/hA39g4Yhwa5Ks3yvss2cs1KxgAqrxjX8m+ZXrvW54fQ/97nX+oWXCOBA+LywcdJe3erWWq/vHvdACMFdzCccE7GKRPdk5SL3Pa1z0D/6N9tWPjScB+f+ebR7gI7f0B/TN7QW6IfhLep0Vv1PRsaloKtNYFaXeoRRXZfddoMRIWPMTPSNvpqGnnUsJDdMEkrolyBpWmIW7A5W2Xahp2IOWbVXb28YIThQvYMsggDBwDEnPO2QDr5iF+xoqC75BzSA4aDmNkAPb1kL2LiNYoFiLGlqRrLGYRdtMvcPy61hqNAokrQqEtzFR5DBKSUzOp6uwGZMplihNUiqlIhKJxYQqwXXYaLQgK7HosYYm6ii15iYliVU3StRYTODtCIEJKEwLadAKkWlYmIleZ8q78PnrMEkjIwFpaKjK3oYRCrl3JEWi5A7MKmTu1HArwxVNJKkoSsTTRISFCVIJbZjRSlgg1upxepgGlUg3IGaVKwm1E7uixOVp0zvughbzoCpYhmN4xo1xh8mFTjBLrbJvsjTGeRIObJGFgEJkpcCjbRSVzRJvNQqtAAAAAA==') format('woff2'),
+  url('iconfont.woff?t=1611932151745') format('woff'),
+  url('iconfont.ttf?t=1611932151745') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1611932151745#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shangyishoushangyige:before {
+  content: "\e78a";
+}
+
+.icon-xiayigexiayishou:before {
+  content: "\e7a5";
+}
+
+.icon-zanting:before {
+  content: "\e7af";
+}
+
+.icon-play:before {
+  content: "\e634";
+}
+

@@ -8,7 +8,7 @@
 
 <text class="title">场景歌单</text>
 <view class="playlist-container">
-  <block wx:for="{{playlist}}" wx:key="id">
-    <lh-playlist playList = "{{item}}"></lh-playlist>
+  <block wx:for="{{playlist}}" wx:key="_id">
+    <lh-playlist playlist = "{{item}}"></lh-playlist>
   </block>
 </view>

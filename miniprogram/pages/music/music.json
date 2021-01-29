@@ -2,5 +2,6 @@
   "usingComponents": {
     "lh-playlist": "/components/playlist/playlist"
   },
-  "navigationBarTitleText": "音乐"
+  "navigationBarTitleText": "音乐",
+  "enablePullDownRefresh": true
 }

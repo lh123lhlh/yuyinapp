@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "lh-musiclist": "/components/musiclist/musiclist"
+  },
+  "navigationBarTitleText" :"歌曲"
+}
