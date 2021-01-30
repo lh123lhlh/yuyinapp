@@ -1,4 +1,17 @@
 <view wx:if="{{picUrl}}" class="player-container" style="background:url({{picUrl}}) center/cover no-repeat"></view>
 <view class="player-mask"></view>
 
-<text class="iconfont icon-xiayigexiayishou"></text>
+<view class="player-info">
+  <view class="player-disc {{isPlaying?'playing':''}}">
+    <image class="player-img zhuan {{isPlaying?'':'ting'}}" src="{{picUrl}}"></image>
+  </view>
+
+  <!--控制面板-->
+  <view class="control">
+    <text class="iconfont icon-shangyishoushangyige" bind:tap="onPrev"></text>
+    <text class="iconfont {{isPlaying?'icon-zanting':'icon-play'}} " bind:tap="togglePlaying"></text>
+    <text class="iconfont icon-xiayigexiayishou" bind:tap="onNext"></text>
+  </view>
+</view>
+
+

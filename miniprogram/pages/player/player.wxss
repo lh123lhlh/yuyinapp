@@ -19,10 +19,84 @@
   z-index: -2;
   background-color: #222;
 }
-.iconfont{
-  color: #fefefe;
+
+.player-info{
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
-.icon-xiayigexiayishou{
+.player-disc{
+  width: 592rpx;
+  height: 592rpx;
+  background: url('https://lh-studentmanager.oss-cn-beijing.aliyuncs.com/softeare/iconfont/disc.png') no-repeat center/contain;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 140rpx);
+}
+
+.player-disc::after{
+  content: '';
+  width: 192rpx;
+  height: 274rpx;
+  position: absolute;
+  top: -150rpx;
+  left: 266rpx;
+  background: url('https://lh-studentmanager.oss-cn-beijing.aliyuncs.com/softeare/iconfont/needle.png') no-repeat center/contain;
+  transform: rotate(-15deg);
+  transform-origin: 24rpx 10rpx;
+  transition: transform 0.8s ease;
+}
+
+.playing.player-disc::after{
+  transform: rotate(0deg);
+}
+
+.player-img{
+  width: 368rpx;
+  height: 368rpx;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -184rpx;
+  margin-left: -184rpx;
+}
+
+.zhuan{
+   animation: disc 12s linear infinite;
+}
+@keyframes disc{
+  from{
+    transform: rotate(0deg);
+  } to {
+    transform: rotate(360deg);
+  }
+}
+
+.ting {
+  animation-play-state: paused;
+}
+
+.control{
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  }
+.icon-shangyishoushangyige,.icon-xiayigexiayishou{
+  font-size: 80rpx;
+  color: white;
+}
+
+.icon-play,.icon-zanting{
   font-size: 120rpx;
+  margin:0 50rpx;
+  color: white;
+
 }
