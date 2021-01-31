@@ -66,6 +66,11 @@
   margin-left: -184rpx;
 }
 
+.player-process{
+  margin-top: 900rpx;
+  
+}
+
 .zhuan{
    animation: disc 12s linear infinite;
 }

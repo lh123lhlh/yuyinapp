@@ -6,6 +6,12 @@
     <image class="player-img zhuan {{isPlaying?'':'ting'}}" src="{{picUrl}}"></image>
   </view>
 
+  <!--音乐进度条-->
+  <view class="player-control">  
+    <view class="player-process">      
+      <slider activeColor="#d33a31" block-size="10"  bindchanging="sliderChanging" backgroundColor="#dadada" value="{{sliderValue}}"/>   
+    </view>  
+  </view>
   <!--控制面板-->
   <view class="control">
     <text class="iconfont icon-shangyishoushangyige" bind:tap="onPrev"></text>

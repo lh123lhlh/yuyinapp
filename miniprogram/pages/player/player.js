@@ -9,7 +9,11 @@ Page({
    */
   data: {
     picUrl: '',
-    isPlaying:false
+    isPlaying:false,
+    sliderValue: 0,
+    updateState: false, 
+    playStates: true
+    
   },
 
   /**
@@ -92,8 +96,41 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    this.videoContext = wx.createVideoContext('musicId', component)
+    this.setData({
+      updateState: true
+    })
   },
+
+  viedoUpdate(e) {
+    if(this.data.updateState) {
+      let sliderValue = e.detail.currentTime / e.detail.duration * 100;
+      this.setData({
+        sliderValue,
+        duration: e.detail.duration
+      })
+    }
+  },
+
+  sliderChanging(e) {
+    this.setData({
+    updateState: false //拖拽过程中，不允许更新进度条
+    })
+    },
+
+    sliderChange(e) {
+      if (this.data.duration) {
+      this.videoContext.seek(e.detail.value / 100 * this.data.duration); //完成拖动后，计算对应时间并跳转到指定位置
+      this.setData({
+      sliderValue: e.detail.value,
+      updateState: true //完成拖动后允许更新滚动条
+      
+      })
+      
+      }
+      
+      },
+  
 
   /**
    * 生命周期函数--监听页面显示
