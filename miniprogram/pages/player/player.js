@@ -12,9 +12,10 @@ Page({
     isPlaying:false,
     sliderValue: 0,
     updateState: false, 
-    playStates: true
-    
-  },
+    playStates: true,
+    isLyricShow: false,
+    lyric: '传给歌词之间的歌词',
+   },
 
   /**
    * 生命周期函数--监听页面加载
@@ -63,6 +64,26 @@ Page({
       this.setData({
         isPlaying:true
       })
+
+      wx.hideLoading()
+      wx.cloud.callFunction({
+        name: 'music',
+        data: {
+          musicId,
+          $url: 'lyric'
+        }
+      }).then((res) => {
+        console.log(res)
+
+        let lyric = '暂无歌词'
+        const lrc = res.result.lrc
+        if(lrc){
+          lyric = lrc.lyric
+        }
+        this.setData({
+          lyric
+        })
+      })
     })
   },
   togglePlaying(){
@@ -74,6 +95,15 @@ Page({
     this.setData({
       isPlaying: !this.data.isPlaying
     })
+  },
+  onLyricShow(){
+    this.setData({
+      isLyricShow: !this.data.isLyricShow
+    })
+  },
+
+  timeUpdate(event){
+    this.selectComponent('.lyric').update(event.detail.currentTime)
   },
 
   onPrev(){
